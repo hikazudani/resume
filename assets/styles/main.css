@@ -76,16 +76,23 @@ section{
     max-width: 400px;
 }
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #contact{
     width: 30%;
     text-align: center;
     display: flex;
-    height: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color:var(--white_color);
+    height: 100%;
     padding: 30px;
+    border: 2px solid var(--yellow_color);
+    border-left: none;
 }
 
 #contact>*{
@@ -104,11 +111,30 @@ section{
 }
 
 #education{
-    display: flex;
     width: 70%;
+    border: 2px solid var(--yellow_color);
+    border-right: none;
+    position: relative;
+    padding: 50px;
+}
+#education ul{
+    display: flex;
     flex-wrap: wrap;
 }
 
 #education .course{
     width: 50%;
+}
+
+#education>.subtitle{
+    width: 320px;
+    height: 68px;
+    border-radius: 12px;
+    background-color: var(--yellow_color);
+    padding-left: 15px;
+    line-height: 68px;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    top: -38px;
 }
