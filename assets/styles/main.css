@@ -122,10 +122,6 @@ section{
     flex-wrap: wrap;
 }
 
-#education .course{
-    width: 50%;
-}
-
 #education>.subtitle{
     width: 320px;
     height: 68px;
@@ -137,4 +133,21 @@ section{
     font-size: 1.5em;
     position: absolute;
     top: -38px;
+}
+
+section li{
+    margin: 25px;
+}
+
+section li>h4{
+    color: var(--white_color);
+    margin-bottom: 15px;
+}
+
+section li>h5{
+    color: var(--yellow_color);
+}
+
+section li>h6{
+    color: var(--white_color);
 }
