@@ -117,10 +117,18 @@ section{
     position: relative;
     padding: 50px;
 }
-#education ul{
-    display: flex;
-    flex-wrap: wrap;
+
+#education ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0;
 }
+#education .course {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
 
 #education>.subtitle{
     width: 320px;
@@ -133,10 +141,6 @@ section{
     font-size: 1.5em;
     position: absolute;
     top: -38px;
-}
-
-section li{
-    margin: 25px;
 }
 
 section li>h4{
