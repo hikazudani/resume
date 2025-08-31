@@ -2,7 +2,7 @@
     --default_color:#000;
     --second_color: #2e2e2e;
     --banner_color:#f8d33b;
-    --text_color:#f5fced;
+    --white_color:#f5fced;
 }
 
 *{
@@ -22,6 +22,17 @@ html, body{
     max-width: 1090px;
     width: 100%;
     margin: 20px auto;
-    background-color: var(--second_color);
+    background-color: transparent;
     min-height: 600px;
+    border: 2px solid var(--white_color);
+}
+
+section{
+    background-color: var(--default_color);
+    min-height: 300px;
+}
+
+#education, #skills{
+    background-color: var(--second_color);
+    min-height: 300px;
 }
