@@ -1,7 +1,7 @@
 :root{
     --default_color:#000;
     --second_color: #2e2e2e;
-    --banner_color:#f8d33b;
+    --yellow_color:#f8d33b;
     --white_color:#f5fced;
 }
 
@@ -36,24 +36,26 @@ html, body{
     max-width: 1090px;
     width: 100%;
     margin: 20px auto;
-    background-color: transparent;
+    background-color: var(--second_color);
     min-height: 600px;
     border: 2px solid var(--white_color);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section{
-    background-color: var(--default_color);
+    background-color: transparent;
     min-height: 300px;
+}
+
+#about{
+    width: 100%;
 }
 
 #about, #experiences{
     background-color: var(--default_color);
     min-height: 300px;
     display: flex;
-}
-#education, #skills{
-    background-color: var(--second_color);
-    min-height: 300px;
 }
 
 #about .presentation{
@@ -63,13 +65,50 @@ section{
     align-items: flex-start;
     justify-content: center;
     text-align: justify;
-    padding: 20px;
+    padding: 40px;
 }
 
 #about .presentation>h1{
-    color: var(--banner_color)
+    color: var(--yellow_color)
 }
 
 #about .profile img{
     max-width: 400px;
+}
+
+#contact{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:var(--white_color);
+    padding: 30px;
+}
+
+#contact>*{
+    padding: 10px;
+}
+
+#contact>h3, #contact label{
+    color: var(--yellow_color);
+    margin: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+#contact a, #contact a:visited{
+    color:var(--white_color)
+}
+
+#education{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+#education .course{
+    width: 50%;
 }
