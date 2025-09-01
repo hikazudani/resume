@@ -1,64 +1,102 @@
-:root{
-    --default_color:#000;
+:root {
+    --default_color: #000;
     --second_color: #2e2e2e;
-    --yellow_color:#f8d33b;
-    --white_color:#f5fced;
+    --yellow_color: #f8d33b;
+    --white_color: #f5fced;
 }
 
-@font-face{
+@font-face {
     font-family: 'MADETommy';
     src: url(/assets/fonts/MADETommySoft/MADE\ Tommy\ Soft\ Regular\ PERSONAL\ USE.otf);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
 }
 
-.m-10{
+.m-10 {
     margin: 10px;
 }
 
-h1{
-    font-size: 3em;
-}
-
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
     background-color: black;
     font-family: 'MADETommy', Arial, Helvetica, sans-serif;
 }
 
-#page{
+h1 {
+    font-size: 3em;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+#page {
     max-width: 1090px;
     width: 100%;
     margin: 20px auto;
     background-color: var(--second_color);
     min-height: 600px;
-    border: 2px solid var(--white_color);
     display: flex;
     flex-wrap: wrap;
 }
 
-section{
+section {
     background-color: transparent;
     min-height: 300px;
+    position: relative;
+    padding: 50px;
 }
 
-#about{
+section>.subtitle {
+    width: 320px;
+    height: 68px;
+    border-radius: 12px;
+    background-color: var(--yellow_color);
+    padding-left: 15px;
+    line-height: 68px;
+    font-size: 1.5em;
+    position: absolute;
+    top: -38px;
+    left: calc(50% - 160px);
+    text-align: center;
+}
+
+section li>h4 {
+    color: var(--white_color);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+section li>h5 {
+    color: var(--yellow_color);
+    font-size: 1.2rem;
+}
+
+section li>h6 {
+    color: var(--white_color);
+    font-size: 1rem;
+}
+
+#about {
     width: 100%;
+    padding: 0;
 }
 
-#about, #experiences{
+#about,
+#experiences {
     background-color: var(--default_color);
     min-height: 300px;
     display: flex;
 }
 
-#about .presentation{
+#about .presentation {
     color: var(--white_color);
     display: flex;
     flex-direction: column;
@@ -68,90 +106,120 @@ section{
     padding: 40px;
 }
 
-#about .presentation>h1{
+#about .presentation>h1 {
     color: var(--yellow_color)
 }
 
-#about .profile img{
-    max-width: 400px;
+#about .presentation > h3 {
+    margin-top: -10px;
 }
 
-.row{
+#about .presentation > p {
+    font-family: sans-serif;
+    margin-top: -10px;
+    line-height: 1.3;
+    font-size: 1.1rem;
+}
+
+#about .profile img {
+    max-width: 400px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-#contact{
+#contact {
     width: 30%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color:var(--white_color);
+    color: var(--white_color);
     height: 100%;
     padding: 30px;
     border: 2px solid var(--yellow_color);
     border-left: none;
 }
 
-#contact>*{
+#contact>* {
     padding: 10px;
 }
 
-#contact>h3, #contact label{
+#contact>h3,
+#contact label {
     color: var(--yellow_color);
-    margin: 10px;
+    margin: 5px;
     display: inline-block;
     width: 100%;
 }
 
-#contact a, #contact a:visited{
-    color:var(--white_color)
+#contact a,
+#contact a:visited {
+    color: var(--white_color);
 }
 
-#education{
+#education {
     width: 70%;
     border: 2px solid var(--yellow_color);
     border-right: none;
     position: relative;
     padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#education h5 {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+#education h6 {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+
+#education>.subtitle{
+    left: auto;
 }
 
 #education ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+#education ul li {
+    min-width: 250px;
+    max-width: 350px;
+}
+
+#education .course {
+    width: 50%;
+}
+
+#experiences {
+    width: 100%;
     padding: 0;
 }
-#education .course {
-    padding: 15px;
-    box-sizing: border-box;
+
+#experiences ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
 }
 
-
-#education>.subtitle{
-    width: 320px;
-    height: 68px;
-    border-radius: 12px;
-    background-color: var(--yellow_color);
-    padding-left: 15px;
-    line-height: 68px;
-    font-weight: bold;
-    font-size: 1.5em;
-    position: absolute;
-    top: -38px;
-}
-
-section li>h4{
-    color: var(--white_color);
-    margin-bottom: 15px;
-}
-
-section li>h5{
-    color: var(--yellow_color);
-}
-
-section li>h6{
-    color: var(--white_color);
+#experiences ul li{
+    font-family: sans-serif;
+    min-width: 250px;
+    width: calc(30% - 45px);
+    padding: 5px;
 }
