@@ -35,6 +35,7 @@ h1 {
 
 p{
     font-family: sans-serif;
+    color: var(--white_color);
 }
 
 #page {
@@ -181,7 +182,7 @@ section li>h6 {
 
 #education h6 {
     font-family: sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 #education>.subtitle{
@@ -222,4 +223,92 @@ section li>h6 {
     min-width: 250px;
     width: calc(30% - 45px);
     padding: 5px;
+}
+
+#experiences ul li h5{
+    margin-top: -10 px;
+    color: var(--white_color);
+}
+
+#experiences ul li h6 {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+#skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+#skills .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+#skills > .container > .circle {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills > .container > .circle::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--second_color);
+  width: 60px;
+  height: 60px;
+}
+
+#skills > .container > .circle-85 {
+  background: conic-gradient(
+    var(--yellow_color) calc(360 * 0.85deg),
+    white 0deg
+  );
+}
+
+#skills > .container > .circle-77 {
+  background: conic-gradient(
+    var(--yellow_color) calc(360 * 0.77deg),
+    white 0deg
+  );
+}
+
+#skills > .container > .circle-68 {
+  background: conic-gradient(
+    var(--yellow_color) calc(360 * 0.68deg),
+    white 0deg
+  );
+}
+
+#skills > .container > .circle-60 {
+  background: conic-gradient(
+    var(--yellow_color) calc(360 * 0.60deg),
+    white 0deg
+  );
+}
+
+.progress {
+  position: relative;
+  font-family: "Poppins-Regular";
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--white_color);
+}
+
+.subtitle-circle {
+  color: var(--white_color);
+  font-family: "Poppins-Regular";
 }
